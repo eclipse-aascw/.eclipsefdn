@@ -2,7 +2,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('dt.aascw', 'eclipse-aascw') {
   settings+: {
-    deploy_keys_enabled_for_repositories: true,
+    deploy_keys_enabled_for_repositories: false,
     description: "",
     members_can_change_project_visibility: false,
     name: "Eclipse AAS Core Works project",
