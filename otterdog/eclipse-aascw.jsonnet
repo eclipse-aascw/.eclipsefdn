@@ -74,19 +74,6 @@ orgs.newOrg('dt.aascw', 'eclipse-aascw') {
           value: "********",
         },
       ],
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule('main') {
-          allows_deletions: true,
-          allows_force_pushes: true,
-          required_approving_review_count: 1,
-          required_status_checks+: [
-            "Execute (3.10)"
-          ],
-          requires_code_owner_reviews: true,
-          requires_conversation_resolution: true,
-          requires_strict_status_checks: true,
-        },
-      ],
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
