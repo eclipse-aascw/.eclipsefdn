@@ -1059,6 +1059,32 @@ orgs.newOrg('dt.aascw', 'eclipse-aascw') {
         default_workflow_permissions: "write",
       },
     },
+    orgs.newRepo('aas-client3.2-csharp') {
+      allow_merge_commit: true,
+      allow_update_branch: true,
+      delete_branch_on_merge: true,
+      description: "Interact with AAS V3.2 servers over HTTP using C#.",
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
+    orgs.newRepo('aas-client3.2-golang') {
+      allow_merge_commit: true,
+      allow_update_branch: true,
+      delete_branch_on_merge: true,
+      description: "Interact with AAS V3.2 servers over HTTP using Go.",
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('aas-client3.2-python') {
       allow_merge_commit: true,
       allow_update_branch: true,
