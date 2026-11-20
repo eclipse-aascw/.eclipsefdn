@@ -863,6 +863,19 @@ orgs.newOrg('dt.aascw', 'eclipse-aascw') {
         default_workflow_permissions: "write",
       },
     },
+    orgs.newRepo('aas-package3-python') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Read and write V3 .aasx packages in Python. ",
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('aas-package3-typescript') {
       allow_merge_commit: true,
       allow_update_branch: false,
