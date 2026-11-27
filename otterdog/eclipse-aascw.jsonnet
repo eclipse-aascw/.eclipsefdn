@@ -927,6 +927,17 @@ orgs.newOrg('dt.aascw', 'eclipse-aascw') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('aas-smt-verification-with-llms') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      dependabot_alerts_enabled: false,
+      description: "Verify AAS Submodel Templates using Large Language Models.",
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('aas-versioning3.0') {
       allow_forking: false,
       allow_merge_commit: true,
